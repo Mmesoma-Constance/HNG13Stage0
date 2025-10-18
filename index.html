@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <script
+      src="https://kit.fontawesome.com/5a0914105d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="profile-card">
+      <figure class="profile-card-heading">
+        <div class="imageDiv">
+          <img data-testid="test-usee-avatar" src="mine1.jpg" class="myImage" />
+        </div>
+      </figure>
+
+      <div class="">
+        <h1 data-testid="test-user-name">Nwokem Mmesoma</h1>
+        <h2 data-testid="test-usee-track">Frontend Developer</h2>
+        <br />
+        <p data-testid="test-user-bio">
+          I’m a Frontend Developer passionate about building visually appealing, user-friendly, and responsive websites. I specialize in turning design concepts into functional digital experiences using HTML, CSS, JavaScript, and modern frameworks like React and Next.js.
+        </p>
+        
+        <ul data-testid="test-user-social-links">
+          <a
+            href="https://www.linkedin.com/in/stacy-constance-9173aa382?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
+            <li data-testid="test-user-social-linkedin">>LinkedIn</li>
+          </a>
+          <a
+            href="https://x.com/StacyInTech_?t=9FA0aUbHUxbOkmBeBuGlOw&s=09"
+            target="_blank"
+          >
+            <li data-testid="test-user-social-twitter">Twitter</li>
+          </a>
+        </ul>
+
+        <section data-testid="test-user-hobbies">
+      <h3>Hobbies</h3>
+      <ul class="ul-link">
+        <li>Cooking</li>
+        <li>Coding</li>
+        <li>Watching movies</li>
+      </ul>
+    </section>
+
+    <section data-testid="test-user-dislikes">
+      <h3>Dislikes</h3>
+      <ul class="ul-link">
+        <li>Dishonesty</li>
+        <li>Procrastination</li>
+        <li>Noisy environments</li>
+      </ul>
+    </section>
+        <p data-testid="test-user-time" id="utc-time"></p>
+      </div>
+    </article>
+    <script src="script.js"></script>
+  </body>
+</html>
