@@ -81,20 +81,6 @@ body {
   color: #7fff00;
 }
 
-.profile-card button {
-  background: #00ff00;
-  color: green;
-  padding: 7px 15px;
-  border-radius: 20px;
-  border: none;
-}
-
-.profile-card button:hover {
-  font-weight: 500;
-  cursor: pointer;
-  background: #01db01;
-}
-
 .profile-card a:hover {
   text-decoration: underline;
 }
@@ -117,5 +103,5 @@ ul {
 
 #utc-time {
   padding-top: 5px;
-  color: green;
+  color: #7fff00;
 }
