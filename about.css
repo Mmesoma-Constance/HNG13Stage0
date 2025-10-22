@@ -19,7 +19,7 @@ header {
 
 .profile-card {
   background: linear-gradient(to top, #7e1478ff, #b00d8dff);
-
+  color: #f7c8ff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -45,14 +45,6 @@ header {
   }
 }
 
-.imageDiv {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
 .profile-card img {
   max-width: 100%;
   height: auto;
@@ -76,7 +68,7 @@ header {
   font-size: 1em;
   color: #333;
   margin: 5px 0;
-  color: white;
+  color: #f7c8ff;
   font-style: italic;
 }
 
@@ -105,33 +97,10 @@ header {
   margin-right: auto;
 }
 
-.test-user-bio {
-  padding-right: 10px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.active-page {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-#utc-time {
-  padding-top: 30px;
-  color: #7fff00;
-  padding-bottom: 20px;
-}
-
-.hobbies-dislikes {
-  display: flex;
-  gap: 10px;
-  justify-content: space-around;
-  align-items: center;
-  margin: auto;
+.profile-card img {
+  max-width: 100%;
+  height: auto;
+  width: 200px;
 }
 
 .main-nav ul {
@@ -146,4 +115,49 @@ ul {
 .main-nav ul li:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.active-page {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  font-weight: 400;
+  color: #f7c8ff;
+}
+
+/*For small screens(≥640px) */
+
+@media (min-width: 640px) {
+  .about-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For medium screens (≥768px) */
+@media (min-width: 768px) {
+  .about-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For large screens (≥1024px) */
+@media (min-width: 1024px) {
+  .about-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

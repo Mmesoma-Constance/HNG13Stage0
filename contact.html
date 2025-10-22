@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <main id="contact" class="profile-card" data-testid="test-contact-page">
+      <figure class="profile-card-heading">
+        <div class="imageDiv">
+          <img data-testid="test-usee-avatar" src="mine1.jpg" class="myImage" />
+        </div>
+      </figure>
+
+      <div class="">
+        <header class="">
+          <h1 data-testid="test-user-name">Nwokem Mmesoma</h1>
+          |
+          <h2 data-testid="test-usee-track">Frontend Developer</h2>
+        </header>
+
+        <nav class="main-nav">
+          <ul class="">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li class="active-page"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <form id="contactForm" novalidate>
+          <div>
+            <label for="name">Full Name</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="John Doe"
+              data-testid="test-contact-name"
+              aria-describedby="error-name"
+              required
+            />
+            <p
+              id="error-name"
+              class="error"
+              data-testid="test-contact-error-name"
+            ></p>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="example@email.com"
+              data-testid="test-contact-email"
+              aria-describedby="error-email"
+              required
+            />
+            <p
+              id="error-email"
+              class="error"
+              data-testid="test-contact-error-email"
+            ></p>
+          </div>
+
+          <div>
+            <label for="subject">Subject</label>
+            <input
+              id="subject"
+              type="text"
+              placeholder="What's this message about?"
+              data-testid="test-contact-subject"
+              aria-describedby="error-subject"
+              required
+            />
+            <p
+              id="error-subject"
+              class="error"
+              data-testid="test-contact-error-subject"
+            ></p>
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Write your message..."
+              data-testid="test-contact-message"
+              aria-describedby="error-message"
+              required
+            ></textarea>
+            <p
+              id="error-message"
+              class="error"
+              data-testid="test-contact-error-message"
+            ></p>
+          </div>
+
+          <button type="submit" data-testid="test-contact-submit">
+            Send Message
+          </button>
+
+          <p
+            id="successMessage"
+            class="success"
+            data-testid="test-contact-success"
+            hidden
+          >
+            ✅ Thank you! Your message has been sent successfully.
+          </p>
+        </form>
+      </div>
+    </main>
+    <script src="contact.js"></script>
+  </body>
+</html>

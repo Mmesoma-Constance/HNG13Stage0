@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <article data-testid="test-profile-card" class="profile-card">
+    <article
+      id="home"
+      class="page active profile-card"
+      data-testid="test-profile-card"
+    >
       <figure class="profile-card-heading">
         <div class="imageDiv">
           <img data-testid="test-usee-avatar" src="mine1.jpg" class="myImage" />
@@ -19,13 +23,28 @@
       </figure>
 
       <div class="">
-        <h1 data-testid="test-user-name">Nwokem Mmesoma</h1>
-        <h2 data-testid="test-usee-track">Frontend Developer</h2>
+        <header class="">
+          <h1 data-testid="test-user-name">Nwokem Mmesoma</h1>
+          |
+          <h2 data-testid="test-usee-track">Frontend Developer</h2>
+        </header>
+
+        <nav class="main-nav">
+          <ul class="">
+            <li class="active-page"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
         <br />
-        <p data-testid="test-user-bio">
-          I’m a Frontend Developer passionate about building visually appealing, user-friendly, and responsive websites. I specialize in turning design concepts into functional digital experiences using HTML, CSS, JavaScript, and modern frameworks like React and Next.js.
+        <p data-testid="test-user-bio" class="test-user-bio">
+          I’m a Frontend Developer passionate about building visually appealing,
+          user-friendly, and responsive websites. I specialize in turning design
+          concepts into functional digital experiences using HTML, CSS,
+          JavaScript, and modern frameworks like React and Next.js.
         </p>
-        
+
         <ul data-testid="test-user-social-links">
           <a
             href="https://www.linkedin.com/in/stacy-constance-9173aa382?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -41,23 +60,26 @@
           </a>
         </ul>
 
-        <section data-testid="test-user-hobbies">
-      <h3>Hobbies</h3>
-      <ul class="ul-link">
-        <li>Cooking</li>
-        <li>Coding</li>
-        <li>Watching movies</li>
-      </ul>
-    </section>
+        <section class="hobbies-dislikes">
+          <section data-testid="test-user-hobbies">
+            <h3>Hobbies</h3>
+            <ul class="ul-link">
+              <li>Coding</li>
+              <li>Video Editing</li>
+              <li>Watching movies</li>
+            </ul>
+          </section>
 
-    <section data-testid="test-user-dislikes">
-      <h3>Dislikes</h3>
-      <ul class="ul-link">
-        <li>Dishonesty</li>
-        <li>Procrastination</li>
-        <li>Noisy environments</li>
-      </ul>
-    </section>
+          <section data-testid="test-user-dislikes">
+            <h3>Dislikes</h3>
+            <ul class="ul-link">
+              <li>Dishonesty</li>
+              <li>Procrastination</li>
+              <li>Noisy environments</li>
+            </ul>
+          </section>
+        </section>
+
         <p data-testid="test-user-time" id="utc-time"></p>
       </div>
     </article>

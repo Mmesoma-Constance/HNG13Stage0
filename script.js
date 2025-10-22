@@ -1,3 +1,4 @@
+// update time
 function updateTime() {
   const now = new Date();
   document.getElementById("utc-time").textContent =
